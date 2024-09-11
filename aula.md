@@ -7,7 +7,7 @@ Como uma peça de lego, você irá usar peças para montar um algoritimo, para r
 
   ## Peças de uma linguagem
 
-  - comentarios 
+  - [X]comentarios 
   - declarações de variaveis (let, const)
   - operadores (Atribuição, concatenação, matemáticos, lógicos)
   - tipos de dados (string, booleanos, number)
@@ -20,3 +20,27 @@ Como uma peça de lego, você irá usar peças para montar um algoritimo, para r
 - coletar dados 
 - processar dados (Manipular, alterar...)
 - apresentar dados
+
+  ## escopos e variaveis
+
+- variaveis globais e locais
+- constantes
+
+  ## tipos de dados
+
+- string (textos): "", '', ``
+- number (números): 2, 2.3, 
+- function:
+
+  ## ??
+
+- let: váriaveis que podem ser modificadas
+-const: váriaveis que não podem ser modificadas 
+
+  ## operadores 
+
+- operadores de atribuição de valores 
+
+  ## ??
+
+- escopos: sempre que eu colocar {}, eu crio uma váriavel diferente
