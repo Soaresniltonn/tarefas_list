@@ -35,12 +35,25 @@ Como uma peça de lego, você irá usar peças para montar um algoritimo, para r
   ## ??
 
 - let: váriaveis que podem ser modificadas
--const: váriaveis que não podem ser modificadas 
+- const: váriaveis que não podem ser modificadas 
+- métodos e funções são as mesmas coisas 
+- métodos estão dentro de objetos, enquanto funções estão fora de objetos
 
   ## operadores 
 
 - operadores de atribuição de valores 
+- operadores de concatenação
 
   ## ??
 
 - escopos: sempre que eu colocar {}, eu crio uma váriavel diferente
+
+  ## Ultima aula
+
+- 10/09, aula 1: Minuto 43:43
+
+  ## objetos
+
+- [x] Atribuição e métodos
+- [x] criação e manipulação de objetos
+- [x] acesso a propriedade de objeto
