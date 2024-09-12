@@ -57,3 +57,7 @@ Como uma peça de lego, você irá usar peças para montar um algoritimo, para r
 - [x] Atribuição e métodos
 - [x] criação e manipulação de objetos
 - [x] acesso a propriedade de objeto
+
+  ## estrutura de repetição
+ 
+- [x] while
