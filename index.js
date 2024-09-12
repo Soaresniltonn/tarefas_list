@@ -1,16 +1,10 @@
-let meta = {
-
-    value: "Estudar até ás 18:30h",
-    checked: false,
-    log: (info) => {
-        console.log(info)
-    }  
+const start = () => {
+let count = 1 
+while(count <= 10) {
+    console.log(count)
+    count = count + 1
+}
 
 }
 
-
-meta.log()
-
-const criarMeta = () => {}
-
-function criarMeta() {}
+start()
