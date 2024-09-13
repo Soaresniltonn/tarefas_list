@@ -61,3 +61,8 @@ Como uma peça de lego, você irá usar peças para montar um algoritimo, para r
   ## estrutura de repetição
  
 - [x] while
+
+  ## modulos em node.js
+
+- importação de módulos (require, CommonJS)
+- Biblioteca 'inquire' para criar prompts interativos 
