@@ -41,8 +41,9 @@ Como uma peça de lego, você irá usar peças para montar um algoritimo, para r
 
   ## operadores 
 
-- operadores de atribuição de valores 
-- operadores de concatenação
+- operadores de atribuição de valores =
+- operadores de concatenação +
+- operadores de comparação  == != <= >= < >
 
   ## ??
 
@@ -51,6 +52,8 @@ Como uma peça de lego, você irá usar peças para montar um algoritimo, para r
   ## Ultima aula
 
 - 10/09, aula 1: Minuto 43:43
+- 12/09, aula 2:Minuto 25:00
+- 13/09, aula 2: Minuto 36:00
 
   ## objetos
 
@@ -66,3 +69,12 @@ Como uma peça de lego, você irá usar peças para montar um algoritimo, para r
 
 - importação de módulos (require, CommonJS)
 - Biblioteca 'inquire' para criar prompts interativos 
+
+  ## progamação assíncrona e promisses
+
+- uso de funções assíncronas (await, async)
+
+  ## Condicionais 
+
+- Switch
+- if/else
