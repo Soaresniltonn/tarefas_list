@@ -26,7 +26,7 @@ const start = async () => {
             message: "Menu >",
             choices: [
                 {
-                    name: "Cadastrar metas",
+                    name: "Cadastrarmetas",
                     value: "cadastrar" // Corrigido aqui
                 },
                 {
