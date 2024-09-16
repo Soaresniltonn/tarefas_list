@@ -103,3 +103,77 @@ Este código é uma aplicação simples de gerenciamento de metas que permite ao
 ### Conclusão
 
 Este programa é um exemplo básico, mas funcional, de como gerenciar informações de forma interativa no terminal. Ele exemplifica conceitos importantes em JavaScript, como funções assíncronas, manipulação de arrays e gerenciamento de fluxo. Com algumas melhorias, como tratamento de erros e melhor manipulação de entradas, ele pode se tornar mais robusto.
+
+
+
+
+
+  ## Erros e acertos
+  O código que você forneceu parece ter um erro que pode interromper a execução. Vamos analisá-lo, identificar o problema, explicar por que ele ocorre e como solucioná-lo.
+
+### Identificação do Erro
+
+1. **Erro na Condição do if**:
+   No bloco da função `listarMetas`, você tem esta linha:
+   ```javascript
+   if(respostas.length == o){
+   ```
+   O problema aqui é que `o` não é definido em nenhum lugar do código. Isso resultará em um erro de referência, pois o código tentará comparar `respostas.length` com uma variável que não existe.
+
+### Por que isso acontece:
+
+- Quando o código executa a condição `if`, ele espera que `o` tenha um valor já definido, mas como `o` não é uma variável previamente declarada, o JavaScript lança um erro.
+
+### Como arrumar:
+
+- Você provavelmente quis comparar `respostas.length` a zero. Para verificar se nenhuma meta foi selecionada, substitua `o` por `0`:
+
+```javascript
+if (respostas.length == 0) {
+```
+
+### Código Corrigido
+
+Aqui está a parte corrigida da função `listarMetas`:
+
+```javascript
+const listarMetas = async () => {
+    const respostas = await checkbox({
+        message: "Use as setas para mudar de meta, o espaço para marcar ou desmarcar e o Enter para finalizar essa etapa",
+        choices: metas.map(meta => ({name: meta.value, value: meta.value})), // Formatação correta para choices
+        instructions: false,
+    });
+
+    if (respostas.length === 0) { // Corrigido de "o" para "0"
+        console.log("Nenhuma meta selecionada!");
+        return;
+    }
+
+    respostas.forEach((resposta) => {
+        const meta = metas.find((m) => {
+            return m.value === resposta; // Usando === para comparação estrita
+        });
+
+        meta.checked = true;
+    });
+
+    console.log('Meta(s) marcada(s) como concluída(s)');
+}
+```
+
+### Outras Pequenas Sugestões:
+
+1. **Formatação de `choices`**:
+   A estrutura de `choices` que você estava usando no `checkbox` não estava correta. O correto é usar um formato que contenha `name` e `value`. A linha:
+   ```javascript
+   choices: [...metas],
+   ```
+   foi modificada para:
+   ```javascript
+   choices: metas.map(meta => ({name: meta.value, value: meta.value})),
+   ```
+
+2. **Comparação Estrita**:
+   Em vez de usar `==`, que é uma comparação solta, é uma boa prática usar `===`, que é a comparação estrita, verificando tanto o valor quanto o tipo.
+
+Agora, o seu código deve funcionar corretamente e não lançar erros. Se precisar de mais ajuda ou tiver outras dúvidas, fique à vontade para perguntar!
