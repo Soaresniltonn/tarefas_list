@@ -51,7 +51,11 @@ const start = async () => {
             choices: [
                 {
                     name: "Cadastrar metas",
+<<<<<<< HEAD
                     value: "cadastrar" 
+=======
+                    value: "cadastrar" // Corrigido aqui
+>>>>>>> 3d78189e7b5f8479b3bb5649763fbc935ec3a830
                 },
                 {
                     name: "Listar metas",
